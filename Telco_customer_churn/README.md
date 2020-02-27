@@ -9,7 +9,7 @@
 Customer segmentation is one of the most important metrices for growing companies to evaluate. While it's not the happiest measure, it's a number that give companies the hard truth about its customer retention strategy. 
 
 **What is Customer Chrun?**<br>
-Customer Churn is the percentage of customers that stopped using company's product/service during a certain time frame. THe calculation for  **customer churn** is diving the number of customers company lost during that time period by the number of customers company had at the beginning of that time period.
+Customer Churn is the percentage of customers that stopped using company's product/service during a certain time frame. The calculation for  **customer churn** is diving the number of customers company lost during the time period by the number of customers company had at the beginning of that time period.
 
 For example, if company had 400 customers at the beginning of the year and end with 360, means company's churn rate is 10%, because compant lost 10% of the the customer from the base. Most companies try to decrease churn rate as 0%.
 
@@ -57,39 +57,43 @@ Dataset has information related,
 - Churn - Whether customer left the company or still with the company?
 
 ### Problem Statement
-**Why customers leaving the company?**<br>
+
+Main objective is to detect leaving customers and provide retention plans. In order to achieve this objective, divide whole things into three groups.
+
+**1) Why customers leaving the company?**<br>
 The reason behind the customer leaving the company could be,
 1) High charges
 2) Better offer from competitor
 3) Poor customer service
 4) Some unknown reason
 
-**How to detect the churn customers?**<br>
+**2) How to detect the churn customers?**<br>
 - Monitoring usage
 - Analysing complains
 - Analysing competitors offers
 
-**How to prevent customers to leave a company?**<br>
+**3) How to prevent customers to leave a company?**<br>
 Once you detect the high risk customers, apply
 - Retension plans
 - Improve customer service
 
 
 ### **Content**
-1) Descriptive analysis and EDA (Exploratory data analysis)
+1) **Descriptive analysis and EDA (Exploratory data analysis)**
 - Churn rate and correlation between features
 - Profiler of Churn vs Existing customers
 - Tenure and Monthly charges distribution
-2) Cluster analysis
+2) **Cluster analysis**
 - Churn cluster detection
 - Churn customer cluster analysis - by demographic, account type and service usage
-3) Churn customer prediction model
+3) **Churn customer prediction model**
 - Predictive model process
   - Data preprocessing
   - Model selection
   - Hyperparameter tuning
   - Model evaluation 
- 4) Retention plan
+ 4) **Retention plan**
+
 
 ### 1) Descriptive analysis and EDA (Exploratory data analysis)
 
