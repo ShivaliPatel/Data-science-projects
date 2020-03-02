@@ -77,6 +77,9 @@ Once you detect the high risk customers, apply
 - Retension plans
 - Improve customer service
 
+### Notebook
+
+Link - https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Notebooks/Telecom%20Churn%20Prediction.ipynb
 
 ### **Content**
 1) **Descriptive analysis and EDA (Exploratory data analysis)**
