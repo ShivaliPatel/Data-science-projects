@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib.lines as mlines
 import Constants as const
-
+import Utils
 
 #default configuration
 
@@ -446,6 +446,7 @@ def model_evaluation(x_train, y_train, x_test, y_test, models, clsModelsNm ):
         print(metrics.classification_report(y_test, predicted))
         print("*******************************************")
         print("Log loss score", round(metrics.log_loss(y_test,models[i].predict_proba(x_test)[:,1]),2))
+        print("Custom Log loss score", round(Utils.cus_log_loss(y_test,models[i].predict_proba(x_test)[:,1]),2))
         print("*******************************************")
         print("Confusion matrix")
         sns.heatmap(confusion_matrix_matrix
