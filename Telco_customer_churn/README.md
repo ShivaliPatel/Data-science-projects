@@ -14,7 +14,6 @@ For example,
 If company had 400 customers at the beginning of the month and end with 360, means company's churn rate is 10%, because company lost 10% of the the customer from the base. Companies try to decrease churn rate as 0%.
 
 ## Table of contents
-***************************************
 
 ### 1) Introduction
 - Dataset, features and target value
@@ -37,13 +36,13 @@ If company had 400 customers at the beginning of the month and end with 360, mea
 
 
 
-### Notebook
+## Source code - Notebook
 
 Link - https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Notebooks/Telecom%20Churn%20Prediction-v2.ipynb
 
 
 ## 1. Introduction
-<hr>
+
 
 ### Dataset, Features and Target value
 Source : https://www.kaggle.com/blastchar/telco-customer-churn ( IBM Sample dataset)
@@ -230,12 +229,12 @@ width=500 height=350></img>
 - Splitting dataset into two groups – Training & Testing
 - Class imbalance issue due to inequality in Existing and Churn customers distribution
 
-2) Model Selection
+2) Hyperparameter tuning
+- Using GridSearchCV() method, find out best parameters for respected models
+
+3) Model Comparision
 - Comparing models like Logistic regression, Random forest using corss_val_score() method
 - Measuring scores like Accuracy, Precision, Recall and F1 metrics
-
-3) Parameter tuning
-- Using GridSearchCV() method, find out best parameters for respected models
 
 4) Model Evaluation
 - Using Classification report & Log loss score calculate best model for our data
