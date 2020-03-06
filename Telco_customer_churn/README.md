@@ -4,42 +4,77 @@
 <img src='https://www.superoffice.com/blog/wp-content/uploads/2015/05/customer-churn-750x400.jpg'></img>
 </p>
 
-### Introduction 
+<p align="center" > Photo credit: Superoffice.com</p>
 
-Customer segmentation is one of the most important metrices for growing companies to evaluate. While it's not the happiest measure, it's a number that give companies the hard truth about its customer retention strategy. 
+Customers are most important resources for any companies or business. What if these customers left the company due to high charges, better compititor offers, poor customer services or something unknown, which indirectyly shows company's performance. Hence, Customer churn is one of the important metrics for companies to evaluate their performance. It represents customers who left/stopped using company's product or services and reason could be high charges, better compititor offers, poor customer service/retention plan or something unknown.
 
-**What is Customer Chrun?**<br>
-Customer Churn is the percentage of customers that stopped using company's product/service during a certain time frame. The calculation for  **customer churn** is diving the number of customers company lost during the time period by the number of customers company had at the beginning of that time period.
+Customer churn rate is the KPI to understand loosing customers. Churn rate represents the percentage of customer that company lost over all the customers at the beginning of the interval.
 
-For example, if company had 400 customers at the beginning of the year and end with 360, means company's churn rate is 10%, because compant lost 10% of the the customer from the base. Most companies try to decrease churn rate as 0%.
+For example,
+If company had 400 customers at the beginning of the month and end with 360, means company's churn rate is 10%, because company lost 10% of the the customer from the base. Companies try to decrease churn rate as 0%.
+
+## Table of contents
+***************************************
+
+### 1) Introduction
+- Dataset, features and target value
+- Problem description
+
+### 2) Descriptive analysis and EDA (Exploratory Data Analysis) 
+- Churn rate and Correlation between features 
+- Profile of Churn vs Existing customers 
+- Tenure and Monthly charges distribution
+
+### 3) Cluster analysis 
+- Churn cluster detection 
+- Churn customer cluster analysis – by Demographic, Account type and Service Usage
+
+### 4) Churn customer prediction model 
+- Prediction model process 
+- Model evaluation
+
+### 5) Retention plan
 
 
-### Datasets, Features and Target value
 
-**Source** : https://www.kaggle.com/blastchar/telco-customer-churn ( IBM Sample dataset)
+### Notebook
 
-Here, IBM provided customer data for Telco industry to predict behaviour of the customers. Main objective is that to analyze customer behavious and develop strategies for customer retention.
+Link - https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Notebooks/Telecom%20Churn%20Prediction-v2.ipynb
 
-Dataset has information related,
 
-**Demographic**: 
-  - Gender - Male / Female
-  - Age range - In terms of Partner, Dependent and Senior Citizen
-  
-**Services**: 
- - Phone service - If customer has Phone service, then services related to Phone like;
+## 1. Introduction
+<hr>
+
+### Dataset, Features and Target value
+Source : https://www.kaggle.com/blastchar/telco-customer-churn ( IBM Sample dataset)
+
+Here, IBM provided customer data for Telco industry to predict churn customer based on demographic, usage and account based information. Main objective is that to analyze churn customer behaviors and develop strategies for customer retention.
+
+Assumption - Here, data source has not provided any information related to time; So I have assumed that records are specific to the perticular month.
+
+Dataset has information related to,
+
+#### Demographic:
+
+- Gender - Male / Female <br>
+- Age range - In terms of Partner, Dependent and Senior Citizen
+
+#### Services:
+
+- Phone service - If customer has Phone service, then services related to Phone like;
     - Multiline Phone service
- - Internet Service - If customer has Internet service, then services related to Internet like;
+- Internet Service - If customer has Internet service, then services related to Internet like;
     - Online security
     - Online backup
     - Device protection
     - Tech support
     - Streaming TV
     - Streaming Movies
-    
-**Account type**:
+
+#### Account type:
+
 - Tenure - How long customer is with the company?
-- Contract type - What kind of contract they have with a company? Like 
+- Contract type - What kind of contract they have with a company? Like
     - Monthly bases
     - On going bases - If on going bases, then One month contract or Two year contract
 - Paperless billing - Customer is paperless billion option or not?
@@ -49,56 +84,35 @@ Dataset has information related,
     - Credit card (Automatic)
     - Bank transfer (Automatic)
 
-**Usage**:
+#### Usage:
+
 - Monthly charges
 - Total charges
 
-**Target**:
+#### Target:
+
 - Churn - Whether customer left the company or still with the company?
 
-### Problem Statement
+### Problem Description
 
-Main objective is to detect leaving customers and provide retention plans. In order to achieve this objective, divide whole things into three groups.
+#### Why customers leaving the company?
+The reasons behind the customer leaving company could be 
+- High charges 
+- Better offer from competitor 
+- Poor customer service 
+- Some unknown reasons
 
-**1) Why customers leaving the company?**<br>
-The reason behind the customer leaving the company could be,
-1) High charges
-2) Better offer from competitor
-3) Poor customer service
-4) Some unknown reason
+#### How to detect the churn customer? 
+- Monitoring usage 
+- Analysing complains 
+- Analyzing competitors offers
 
-**2) How to detect the churn customers?**<br>
-- Monitoring usage
-- Analysing complains
-- Analysing competitors offers
-
-**3) How to prevent customers to leave a company?**<br>
-Once you detect the high risk customers, apply
-- Retension plans
+#### How to prevent customers from leaving a company?
+Once you detect high risk customers, apply 
+- Retention plans 
 - Improve customer service
 
-### Notebook
-
-Link - https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Notebooks/Telecom%20Churn%20Prediction.ipynb
-
-### **Content**
-1) **Descriptive analysis and EDA (Exploratory data analysis)**
-- Churn rate and correlation between features
-- Profiler of Churn vs Existing customers
-- Tenure and Monthly charges distribution
-2) **Cluster analysis**
-- Churn cluster detection
-- Churn customer cluster analysis - by demographic, account type and service usage
-3) **Churn customer prediction model**
-- Predictive model process
-  - Data preprocessing
-  - Model selection
-  - Hyperparameter tuning
-  - Model evaluation 
- 4) **Retention plan**
-
-
-### 1) Descriptive analysis and EDA (Exploratory data analysis)
+## 2. Descriptive analysis and EDA (Exploratory data analysis)
 
 #### Churn rate and correlation between features
 Analysis shows that Churn rate of the Telecom company is around 26%.
@@ -139,7 +153,7 @@ From distribution, churn subscribers are
 <img src ='https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Images/MonthlyCharges_distribution.png' width =550 height=400 ></img>
 </p>
 
-### 2) Cluster analysis
+## 3. Cluster analysis
 
 Based on Monthly Charges and Tenure, there is three types of clusters.
 
@@ -210,7 +224,7 @@ High Tenure and High Monthly Charges customers
 width=500 height=350></img>
 </p>
 
-### 3) Churn customer prediction model
+## 4. Churn customer prediction model
 
 1) Data Preprocessing
 - Splitting dataset into two groups – Training & Testing
@@ -227,39 +241,27 @@ width=500 height=350></img>
 - Using Classification report & Log loss score calculate best model for our data
 
 Here, main objective should be to detect all churn customers and retain them. In order to achieve that need to minimize Log loss value as well as improve Recall.
-Both model has same log loss score as well as Recall. But random forest has higher precision, I would go with that.
-Hence, we will use to predict churn customers based on Random Forest.
 
-<p align='center'>
-<img src='https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Images/Logistic_reg_evaluation_matrix.png'
-width=300 height=350></img>
-</p>
+During model development process, gradient boosting model has lower log loss score as well as optimum F1 score. 
 
-
-<p align='center'>
-<img src='https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Images/Random_forest_evaluation_matrix.png'
-width=300 height=350></img>
-</p>
-
-
-Random forest model suggested important features like
+Gradient boosting model suggested important features like
+- Total charges
+- Tenure
+- Monthly charges
 - Contract type
 - Payment method
-- Tenure
-- Internet usage – Fiber optics
-- Total & Monthly Charges
+- Internet service type
 - Paperless billing
-- Online security, Tech support
 
 Most of them, we already analyzed during our EDA process.
 
 
 <p align='center'>
-<img src='https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Images/Random_forest_feature_importance.png'
+<img src='https://github.com/ShivaliPatel/Data-science-projects/blob/master/Telco_customer_churn/Images/Gradient_boosting_feature_importance.png'
 width=700 height=450></img>
 </p>
 
-### 4) Retention plan
+## 5. Retention plan
 
 Since we generated a model based on Churn and Existing customers, which help to classify both of them. Now we can use same model on existing customers to find the probability of churn.
 
@@ -275,4 +277,7 @@ Once, we determine very high/high churn probability customers, we can apply prop
 width=400 height=250></img>
 </p>
 
+## Conclusion
+
+In this project, I have tried to divide customer churn prediction problem into steps like exploration, profiling, clustering, model selection & evaluation and retention plans. Based on this analysis, we can help retention team to analyze high risk churn customers before they leave the company.
 
