@@ -6,9 +6,9 @@
 
 <p align="center" > Photo credit: Superoffice.com</p>
 
-Customers are most important resources for any companies or business. What if these customers left the company due to high charges, better compititor offers, poor customer services or something unknown, which indirectyly shows company's performance. Hence, Customer churn is one of the important metrics for companies to evaluate their performance. It represents customers who left/stopped using company's product or services and reason could be high charges, better compititor offers, poor customer service/retention plan or something unknown.
+Customers are the most important resources for any companies or businessed. What if these customers leave the company due to high charges, better compititor offers, poor customer services or something unknown, which indirectyly shows company's performance. Hence, Customer churn is one of the important metrics for companies to evaluate their performance.
 
-Customer churn rate is the KPI to understand loosing customers. Churn rate represents the percentage of customer that company lost over all the customers at the beginning of the interval.
+Customer churn rate is the KPI to understand leaving customers. Churn rate represents the percentage of customer that company lost over all the customers at the beginning of the interval.
 
 For example,
 If company had 400 customers at the beginning of the month and end with 360, means company's churn rate is 10%, because company lost 10% of the the customer from the base. Companies try to decrease churn rate as 0%.
