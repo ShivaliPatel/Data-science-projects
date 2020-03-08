@@ -5,14 +5,11 @@
 </p>
 
 
-### Introduction 
+Customers are the most important resources for any companies or businessed. What if these customers leave the company due to high charges, better compititor offers, poor customer services or something unknown, which indirectyly shows company's performance. Hence, Customer churn is one of the important metrics for companies to evaluate their performance.
 
-Customer segmentation is one of the most important metrices for growing companies to evaluate. While it's not the happiest measure, it's a number that give companies the hard truth about its customer retention strategy. 
+Customer churn rate is the KPI to understand leaving customers. Churn rate represents the percentage of customer that company lost over all the customers at the beginning of the interval.
 
-**What is Customer Chrun?**<br>
-Customer Churn is the percentage of customers that stopped using company's product/service during a certain time frame. The calculation for  **customer churn** is diving the number of customers company lost during the time period by the number of customers company had at the beginning of that time period.
-
-For example, if company had 400 customers at the beginning of the year and end with 360, means company's churn rate is 10%, because compant lost 10% of the the customer from the base. Most companies try to decrease churn rate as 0%.
+For example, If company had 400 customers at the beginning of the month and end with 360, means company's churn rate is 10%, because company lost 10% of the the customer from the base. Companies try to decrease churn rate as 0%.
 
 
 ### Datasets, Features and Target value
@@ -20,7 +17,6 @@ For example, if company had 400 customers at the beginning of the year and end w
 **Source** : https://www.kaggle.com/blastchar/telco-customer-churn ( IBM Sample dataset)
 
 Here, IBM provided customer data for Telco industry to predict behaviour of the customers. Main objective is that to analyze customer behavious and develop strategies for customer retention.
-
 
 ### Problem Statement
 
