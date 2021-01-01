@@ -14,7 +14,7 @@ For example, If company had 400 customers at the beginning of the month and end 
 
 ### Datasets, Features and Target value
 
-**Source** : https://www.kaggle.com/blastchar/telco-customer-churn ( IBM Sample dataset)
+Database Source : https://www.kaggle.com/blastchar/telco-customer-churn ( IBM Sample dataset)
 
 Here, IBM provided customer data for Telco industry to predict behaviour of the customers. Main objective is that to analyze customer behavious and develop strategies for customer retention.
 
@@ -39,4 +39,4 @@ Once you detect the high risk customers, apply
 - Retension plans
 - Improve customer service
 
-You can find our more information abour this project at here - https://github.com/ShivaliPatel/Data-science-projects/tree/master/Telco_customer_churn
+**You can find detail information abour this project at here - https://github.com/ShivaliPatel/Data-science-projects/tree/master/Telco_customer_churn**
